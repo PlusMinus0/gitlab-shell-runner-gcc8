@@ -19,7 +19,8 @@ RUN apt-get update -yqq && apt-get dist-upgrade -yqq && \
 		libxi-dev \
 		libglib2.0-0 \
 		g++ \
-		cmake
+		cmake \
+		qt5-default
 
 RUN wget -O /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64 &&\
     chmod +x /usr/local/bin/gitlab-runner &&\
